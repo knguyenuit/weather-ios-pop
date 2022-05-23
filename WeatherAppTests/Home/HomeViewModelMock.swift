@@ -14,22 +14,27 @@ class HomeViewModelMock: HomeViewModelType {
     public var searchWeatherSuccess: Bool = false
     public var listWeather: [SearchWeatherCityModel]?
     private let api: APIClient
+    private let dataManager: DataKeepable
     
-    init(api: APIClient) {
+    init(api: APIClient, dataManager: DataKeepable) {
         self.api = api
+        self.dataManager = dataManager
     }
     
     func searchWeather(with city: String) {
         api.searchWeather(with: city) { [weak self] response in
-            self?.searchCitySuccess = true
+            self?.searchWeatherSuccess = true
             self?.listWeather = response.searchApi.result
             self?.onGetListSearchSuccess?(response.searchApi.result)
         } onError: { [weak self] error in
-            self?.searchCitySuccess = false
+            self?.searchWeatherSuccess = false
             self?.listWeather = nil
             self?.onGetListSearchFail?(error.message)
         }
 
     }
     
+    func getDataLocalWeather() -> [SearchWeatherCityModel] {
+        return dataManager.getWeatherLocations()
+    }
 }

@@ -11,16 +11,19 @@ import XCTest
 class HomeViewModelTests: XCTestCase {
     private var viewModel: HomeViewModelMock!
     private var api: APIMock!
+    private var dataManager: DataManagerMock!
     
     override func setUp() {
         super.setUp()
         api = APIMock()
-        viewModel = HomeViewModelMock(api: api)
+        dataManager = DataManagerMock()
+        viewModel = HomeViewModelMock(api: api, dataManager: dataManager)
     }
     
     override func tearDown() {
         api = nil
         viewModel = nil
+        dataManager.clear()
         super.tearDown()
     }
     
@@ -34,15 +37,26 @@ class HomeViewModelTests: XCTestCase {
     
     func testSearchWeather_OnSuccess() {
         api.apiResult = .success
-        viewModel.searchWeather(with: "DaNang")
+        viewModel.searchWeather(with: "HaN")
         XCTAssertTrue(viewModel.searchWeatherSuccess)
         XCTAssertNotNil(viewModel.listWeather)
     }
     
     func testSearchWeather_OnError() {
         api.apiResult = .failure(NWError.noData)
-        viewModel.searchWeather(with: "DaNang")
+        viewModel.searchWeather(with: "HaN")
         XCTAssertFalse(viewModel.searchWeatherSuccess)
         XCTAssertNil(viewModel.listWeather)
+    }
+    
+    func testExistLocalData() {
+        let dataMock = [SearchWeatherCityModel].mock(from: "local_data_mock")!
+        dataManager.saveWeatherLocations(dataMock)
+        XCTAssertTrue(!viewModel.getDataLocalWeather().isEmpty)
+    }
+    
+    func testLocalDataEmpty() {
+        dataManager.clear()
+        XCTAssertTrue(viewModel.getDataLocalWeather().isEmpty)
     }
 }

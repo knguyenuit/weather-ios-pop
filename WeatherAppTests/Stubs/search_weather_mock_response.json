@@ -1,0 +1,256 @@
+{
+  "search_api" : {
+    "result" : [
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.817",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2167,105.8167"
+          }
+        ],
+        "latitude" : "21.217",
+        "areaName" : [
+          {
+            "value" : "Noi Bai"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.800",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8"
+          }
+        ],
+        "latitude" : "21.233",
+        "areaName" : [
+          {
+            "value" : "Ninh Bac"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.800",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8"
+          }
+        ],
+        "latitude" : "21.233",
+        "areaName" : [
+          {
+            "value" : "Yen Ninh"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.817",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8167"
+          }
+        ],
+        "latitude" : "21.233",
+        "areaName" : [
+          {
+            "value" : "Xuan Bach"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.800",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2,105.8"
+          }
+        ],
+        "latitude" : "21.200",
+        "areaName" : [
+          {
+            "value" : "Huong Gia"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.833",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8333"
+          }
+        ],
+        "latitude" : "21.233",
+        "areaName" : [
+          {
+            "value" : "Tien Duoc Ha"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.833",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8333"
+          }
+        ],
+        "latitude" : "21.233",
+        "areaName" : [
+          {
+            "value" : "Tien Duoc"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.800",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.25,105.8"
+          }
+        ],
+        "latitude" : "21.250",
+        "areaName" : [
+          {
+            "value" : "Ninh Mon"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.767",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2167,105.7667"
+          }
+        ],
+        "latitude" : "21.217",
+        "areaName" : [
+          {
+            "value" : "Thoai Loi"
+          }
+        ]
+      },
+      {
+        "region" : [
+          {
+            "value" : ""
+          }
+        ],
+        "country" : [
+          {
+            "value" : "Vietnam"
+          }
+        ],
+        "longitude" : "105.767",
+        "population" : "0",
+        "weatherUrl" : [
+          {
+            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2167,105.7667"
+          }
+        ],
+        "latitude" : "21.217",
+        "areaName" : [
+          {
+            "value" : "Thach Loi"
+          }
+        ]
+      }
+    ]
+  }
+}

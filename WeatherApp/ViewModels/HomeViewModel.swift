@@ -20,13 +20,33 @@ class HomeViewModel: HomeViewModelType {
     var onGetListSearchSuccess: (([SearchWeatherCityModel]) -> Void)?
     var onGetListSearchFail: ((String) -> Void)?
     private let api: APIClient
+    private let dataLocalManager: DataKeepable
     
-    init(api: APIClient) {
+    init(api: APIClient, dataLocalManager: DataKeepable) {
         self.api = api
+        self.dataLocalManager = dataLocalManager
+    }
+    
+    func getDataLocalManager() -> DataKeepable {
+        return dataLocalManager
     }
     
     func checkDataLocal() {
-        self.onGetListSearchSuccess?(DataManager.shared.getWeatherLocations())
+        self.onGetListSearchSuccess?(dataLocalManager.getWeatherLocations())
+    }
+    
+    func getWeatherLocations() -> [SearchWeatherCityModel] {
+        return dataLocalManager.getWeatherLocations()
+    }
+    
+    func saveWeatherLocations(_ location: SearchWeatherCityModel) {
+        var localWeather = dataLocalManager.getWeatherLocations()
+        if localWeather.isEmpty {
+            localWeather.append(location)
+        } else {
+            localWeather.insert(location, at: 0)
+        }
+        dataLocalManager.saveWeatherLocations(localWeather)
     }
     
     func searchWeather(with city: String) {

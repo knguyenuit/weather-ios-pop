@@ -14,7 +14,7 @@ class HomeViewController: BaseVC, Navigatable {
     @IBOutlet private weak var emptyView: UIView!
     
     // MARK: - Properties
-    private var viewModel: HomeViewModel = HomeViewModel(api: API())
+    private var viewModel: HomeViewModel = HomeViewModel(api: API(), dataLocalManager: DataManager())
     private var weatherLocations: [SearchWeatherCityModel] = []
     
     override func viewDidLoad() {
@@ -74,13 +74,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.row < weatherLocations.count else { return }
-        var localWeather = DataManager.shared.getWeatherLocations()
-        if localWeather.isEmpty {
-            localWeather.append(weatherLocations[indexPath.row])
-        } else {
-            localWeather.insert(weatherLocations[indexPath.row], at: 0)
-        }
-        DataManager.shared.saveWeatherLocations(localWeather)
+        viewModel.saveWeatherLocations(weatherLocations[indexPath.row])
         push(to: LocalWeatherViewController(city: weatherLocations[indexPath.row].getAreaName()), animated: true)
     }
     

@@ -20,7 +20,7 @@ class APIMock: APIClient {
                        onError: @escaping (Error) -> Void) {
         switch apiResult {
         case .success:
-            onSuccess(SearchAPIResponse())
+            onSuccess(SearchAPIResponse.mock(from: "search_weather_mock_response")!)
         case .failure(let error):
             onError(error)
         }
@@ -31,7 +31,7 @@ class APIMock: APIClient {
                          onError: @escaping (Error) -> Void) {
         switch apiResult {
         case .success:
-            let mockResponse = WeatherResponse.mock(from: "local_data_response_stub")!
+            let mockResponse = WeatherResponse.mock(from: "local_weather_mock_response")!
             onSuccess(mockResponse)
         case .failure(let error):
             onError(error)
