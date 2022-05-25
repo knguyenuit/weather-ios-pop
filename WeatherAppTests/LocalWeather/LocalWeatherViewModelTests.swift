@@ -9,40 +9,31 @@
 import XCTest
 
 class LocalWeatherViewModelTests: XCTestCase {
-    private var viewModel: LocalWeatherViewModelMock!
-    private var api: APIMock!
-    
     override func setUp() {
         super.setUp()
-        api = APIMock()
-        viewModel = LocalWeatherViewModelMock(api: api, city: "danang")
     }
     
     override func tearDown() {
-        api = nil
-        viewModel = nil
         super.tearDown()
     }
     
-    func testAPI_OnInitialize_ShouldNotNil() {
-        XCTAssertNotNil(api)
-    }
-    
-    func testLocalWeatherViewModel_OnInitialize_ShouldNotNil() {
-        XCTAssertNotNil(viewModel)
-    }
-    
     func testGetLocalWeather_OnSuccess() {
+        let api = APIMock()
         api.apiResult = .success
+        let viewModel =  LocalWeatherViewModel(api: api, city: "danang")
+        viewModel.onGetLocalWeatherSuccess = { model in
+            XCTAssertNotNil(model)
+        }
         viewModel.getLocalWeather()
-        XCTAssertTrue(viewModel.getLocalWeatherSuccess)
-        XCTAssertNotNil(viewModel.weatherResponse)
     }
     
     func testGetLocalWeather_OnError() {
+        let api = APIMock()
         api.apiResult = .failure(NWError.noData)
+        let viewModel =  LocalWeatherViewModel(api: api, city: "danang")
+        viewModel.onGetLocalWeatherFail = { errorMessage in
+            XCTAssertNotNil(errorMessage)
+        }
         viewModel.getLocalWeather()
-        XCTAssertFalse(viewModel.getLocalWeatherSuccess)
-        XCTAssertNil(viewModel.weatherResponse)
     }
 }

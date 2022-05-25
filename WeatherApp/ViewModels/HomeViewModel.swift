@@ -27,10 +27,6 @@ class HomeViewModel: HomeViewModelType {
         self.dataLocalManager = dataLocalManager
     }
     
-    func getDataLocalManager() -> DataKeepable {
-        return dataLocalManager
-    }
-    
     func checkDataLocal() {
         self.onGetListSearchSuccess?(dataLocalManager.getWeatherLocations())
     }
@@ -57,6 +53,5 @@ class HomeViewModel: HomeViewModelType {
             guard let self = self else { return }
             self.onGetListSearchFail?(error.message)
         }
-
     }
 }

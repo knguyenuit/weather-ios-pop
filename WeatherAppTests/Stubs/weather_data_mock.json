@@ -1,0 +1,25 @@
+{
+  "region" : [
+    {
+      "value" : ""
+    }
+  ],
+  "country" : [
+    {
+      "value" : "Vietnam"
+    }
+  ],
+  "longitude" : "105.800",
+  "population" : "0",
+  "weatherUrl" : [
+    {
+      "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8"
+    }
+  ],
+  "latitude" : "21.233",
+  "areaName" : [
+    {
+      "value" : "Da nang"
+    }
+  ]
+}
