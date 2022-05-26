@@ -53,6 +53,37 @@ class HomeViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.getWeatherLocations().count, 0)
     }
     
+    func testInsertLocalData_DoNotInsertExistName() {
+        let dataManager = DataManagerMock()
+        let dataMock = [SearchWeatherCityModel].mock(from: "local_data_mock")!
+        let viewModel = HomeViewModel(api: APIMock(), dataLocalManager: dataManager)
+        let location = dataMock.first
+        let localWeatherLenghtBefore = dataMock.count
+        viewModel.saveWeatherLocations(location!)
+        XCTAssertEqual(localWeatherLenghtBefore, dataMock.count)
+    }
+    
+    func testInsertLocalData_LocalDataAlreadyHad10Item() {
+        let dataManager = DataManagerMock()
+        let dataMock = [SearchWeatherCityModel].mock(from: "local_data_mock")!
+        let viewModel = HomeViewModel(api: APIMock(), dataLocalManager: dataManager)
+        let weatherMock = SearchWeatherCityModel.mock(from: "weather_data_mock")!
+        viewModel.saveWeatherLocations(weatherMock)
+        XCTAssertEqual(dataMock.count, 10)
+        XCTAssertEqual(viewModel.getWeatherLocations()[0].getAreaName(), weatherMock.getAreaName())
+    }
+    
+    func testInsertLocalData_WhenLocalDataEmpty() {
+        let dataManager = DataManagerMock()
+        let dataMock = [SearchWeatherCityModel].mock(from: "local_data_mock_empty")!
+        let viewModel = HomeViewModel(api: APIMock(), dataLocalManager: dataManager)
+        dataManager.saveWeatherLocations(dataMock)
+        let weatherMock = SearchWeatherCityModel.mock(from: "weather_data_mock")!
+        viewModel.saveWeatherLocations(weatherMock)
+        XCTAssertEqual(viewModel.getWeatherLocations().count, 1)
+        XCTAssertEqual(viewModel.getWeatherLocations()[0].getAreaName(), weatherMock.getAreaName())
+    }
+    
     func testInsertWeatherDataSuccess() {
         let weatherMock = SearchWeatherCityModel.mock(from: "weather_data_mock")!
         let dataManager = DataManagerMock()

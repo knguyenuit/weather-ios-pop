@@ -24,7 +24,7 @@ class DataManager: DataKeepable {
     func getWeatherLocations() -> [SearchWeatherCityModel] {
         guard let weatherLocationData = UserDefaults.weatherLocationData,
               let weatherLocations = try? JSONDecoder().decode([SearchWeatherCityModel].self, from: weatherLocationData) else { return [] }
-        return weatherLocations.count < 10 ? weatherLocations : Array(weatherLocations.prefix(10))
+        return weatherLocations
     }
     
     func clear() {

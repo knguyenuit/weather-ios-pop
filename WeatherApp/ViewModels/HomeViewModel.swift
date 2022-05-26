@@ -40,7 +40,12 @@ class HomeViewModel: HomeViewModelType {
         if localWeather.isEmpty {
             localWeather.append(location)
         } else {
-            localWeather.insert(location, at: 0)
+            if !localWeather.contains(where: { $0.getAreaName() == location.getAreaName() }) {
+                if localWeather.count >= 10 {
+                    localWeather.remove(at: 9)
+                }
+                localWeather.insert(location, at: 0)
+            }
         }
         dataLocalManager.saveWeatherLocations(localWeather)
     }

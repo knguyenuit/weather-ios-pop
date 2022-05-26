@@ -27,7 +27,8 @@ class API: APIClient {
                 },
                 onError: { err in
                     onError(err)
-                })
+                }
+            )
     }
     
     func searchWeather(with city: String,
@@ -40,6 +41,7 @@ class API: APIClient {
                 },
                 onError: { err in
                     onError(err)
-                })
+                }
+            )
     }
 }

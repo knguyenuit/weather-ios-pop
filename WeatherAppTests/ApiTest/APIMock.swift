@@ -18,23 +18,26 @@ class APIMock: APIClient {
     func searchWeather(with city: String,
                        onSuccess: @escaping (SearchAPIResponse) -> Void,
                        onError: @escaping (Error) -> Void) {
-        switch apiResult {
-        case .success:
-            onSuccess(SearchAPIResponse.mock(from: "search_weather_mock_response")!)
-        case .failure(let error):
-            onError(error)
-        }
+        SearchWeatherMock(city: city).execute(
+            onSuccess: { response in
+                onSuccess(response)
+            },
+            onError: { err in
+                onError(err)
+            }
+        )
     }
 
     func getLocalWeather(with city: String,
                          onSuccess: @escaping (WeatherResponse) -> Void,
                          onError: @escaping (Error) -> Void) {
-        switch apiResult {
-        case .success:
-            let mockResponse = WeatherResponse.mock(from: "local_weather_mock_response")!
-            onSuccess(mockResponse)
-        case .failure(let error):
-            onError(error)
-        }
+        LocalWeatherCityMock(city: city).execute(
+            onSuccess: { response in
+                onSuccess(response)
+            },
+            onError: { err in
+                onError(err)
+            }
+        )
     }
 }

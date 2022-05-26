@@ -1,253 +1,253 @@
 {
-  "search_api" : {
-    "result" : [
+  "search_api": {
+    "result": [
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.817",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.983",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2167,105.8167"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.35,103.9833"
           }
         ],
-        "latitude" : "21.217",
-        "areaName" : [
+        "latitude": "1.350",
+        "areaName": [
           {
-            "value" : "Noi Bai"
+            "value": "Kampong Ayer Gemuruh"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.800",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.979",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3581,103.9794"
           }
         ],
-        "latitude" : "21.233",
-        "areaName" : [
+        "latitude": "1.358",
+        "areaName": [
           {
-            "value" : "Ninh Bac"
+            "value": "Kampong Darat Nanas"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.800",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.975",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3517,103.975"
           }
         ],
-        "latitude" : "21.233",
-        "areaName" : [
+        "latitude": "1.352",
+        "areaName": [
           {
-            "value" : "Yen Ninh"
+            "value": "Bena Park"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.817",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.972",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8167"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3572,103.9719"
           }
         ],
-        "latitude" : "21.233",
-        "areaName" : [
+        "latitude": "1.357",
+        "areaName": [
           {
-            "value" : "Xuan Bach"
+            "value": "Yan Kit Village"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.800",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.972",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2,105.8"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3572,103.9719"
           }
         ],
-        "latitude" : "21.200",
-        "areaName" : [
+        "latitude": "1.357",
+        "areaName": [
           {
-            "value" : "Huong Gia"
+            "value": "Yan Kit"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.833",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.972",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8333"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.35,103.9719"
           }
         ],
-        "latitude" : "21.233",
-        "areaName" : [
+        "latitude": "1.350",
+        "areaName": [
           {
-            "value" : "Tien Duoc Ha"
+            "value": "Kampong Wing Loong"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.833",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.970",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2333,105.8333"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3597,103.9703"
           }
         ],
-        "latitude" : "21.233",
-        "areaName" : [
+        "latitude": "1.360",
+        "areaName": [
           {
-            "value" : "Tien Duoc"
+            "value": "Bukit Sembawang Estate"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.800",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.975",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.25,105.8"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3361,103.975"
           }
         ],
-        "latitude" : "21.250",
-        "areaName" : [
+        "latitude": "1.336",
+        "areaName": [
           {
-            "value" : "Ninh Mon"
+            "value": "Mata Ikan"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.767",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.975",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2167,105.7667"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3361,103.975"
           }
         ],
-        "latitude" : "21.217",
-        "areaName" : [
+        "latitude": "1.336",
+        "areaName": [
           {
-            "value" : "Thoai Loi"
+            "value": "Mata Ikan Village"
           }
         ]
       },
       {
-        "region" : [
+        "region": [
           {
-            "value" : ""
+            "value": ""
           }
         ],
-        "country" : [
+        "country": [
           {
-            "value" : "Vietnam"
+            "value": "Singapore"
           }
         ],
-        "longitude" : "105.767",
-        "population" : "0",
-        "weatherUrl" : [
+        "longitude": "103.965",
+        "population": "0",
+        "weatherUrl": [
           {
-            "value" : "https:\/\/www.worldweatheronline.com\/v2\/weather.aspx?q=21.2167,105.7667"
+            "value": "https://www.worldweatheronline.com/v2/weather.aspx?q=1.3458,103.9653"
           }
         ],
-        "latitude" : "21.217",
-        "areaName" : [
+        "latitude": "1.346",
+        "areaName": [
           {
-            "value" : "Thach Loi"
+            "value": "East View Garden"
           }
         ]
       }
