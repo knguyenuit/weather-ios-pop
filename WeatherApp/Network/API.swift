@@ -7,6 +7,8 @@
 
 import Foundation
 
+let baseURL = "https://api.worldweatheronline.com/premium/"
+
 protocol APIClient {
     func searchWeather(with city: String,
                         onSuccess: @escaping (SearchAPIResponse) -> Void,
