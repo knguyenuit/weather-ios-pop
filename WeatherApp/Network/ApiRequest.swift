@@ -21,3 +21,9 @@ extension URLSession: DWURLSession {
         return task
     }
 }
+
+enum NWError: Swift.Error {
+    case invalidURL
+    case noData
+    case authFailed
+}

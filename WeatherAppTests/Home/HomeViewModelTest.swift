@@ -35,7 +35,7 @@ class HomeViewModelTests: XCTestCase {
         viewModel.onGetListSearchFail = { errorMessage in
             XCTAssertNotNil(errorMessage)
         }
-        viewModel.searchWeather(with: "H")
+        viewModel.searchWeather(with: "Hsafsdfsdafsdafasd")
     }
 
     func testExistLocalData() {

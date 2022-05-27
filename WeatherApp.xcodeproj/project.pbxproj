@@ -23,6 +23,8 @@
 		261B237128362ABD00379BF5 /* LocalWeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261B236B28362ABD00379BF5 /* LocalWeatherViewController.xib */; };
 		261DAEEB2840955F00787DEF /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261DAEEA2840955F00787DEF /* ApiRequest.swift */; };
 		261DAEED2840A4F500787DEF /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261DAEEC2840A4F500787DEF /* URLSessionMock.swift */; };
+		261DAEEE2840D27700787DEF /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261DAEEA2840955F00787DEF /* ApiRequest.swift */; };
+		261DAEEF2840D27800787DEF /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261DAEEA2840955F00787DEF /* ApiRequest.swift */; };
 		2646BC5728376347005AA976 /* local_weather_mock_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 2646BC5628376347005AA976 /* local_weather_mock_response.json */; };
 		26750114283B499E0060B3CF /* local_weather_mock_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 2646BC5628376347005AA976 /* local_weather_mock_response.json */; };
 		26750115283B499E0060B3CF /* local_weather_mock_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 2646BC5628376347005AA976 /* local_weather_mock_response.json */; };
@@ -615,6 +617,7 @@
 				B7B26BF92836447800D56D45 /* APIMock.swift in Sources */,
 				B7B26BFC283644F400D56D45 /* Decodable+Ext.swift in Sources */,
 				26199B8C283F2AC100F484E2 /* DataManagerTest.swift in Sources */,
+				261DAEEE2840D27700787DEF /* ApiRequest.swift in Sources */,
 				26C2E2282836A664000257C4 /* HomeViewModelTest.swift in Sources */,
 				B7B26BF32836441300D56D45 /* LocalWeatherViewModelTests.swift in Sources */,
 				748536DC283B83690011B89E /* DataManagerMock.swift in Sources */,
@@ -627,6 +630,7 @@
 			files = (
 				26199B8D283F2AC100F484E2 /* DataManagerTest.swift in Sources */,
 				74A787B32833F3FF0015EA95 /* WeatherAppUITests.swift in Sources */,
+				261DAEEF2840D27800787DEF /* ApiRequest.swift in Sources */,
 				74A787B52833F3FF0015EA95 /* WeatherAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

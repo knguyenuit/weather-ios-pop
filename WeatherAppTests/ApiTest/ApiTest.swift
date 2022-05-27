@@ -26,6 +26,7 @@ class ApiTest: XCTestCase {
         else {
             return
         }
+    
         api = API(session: URLSessionMock(data: jsonData, response: nil, error: nil))
 
         api.getLocalWeather(with: "Danang") { response in
