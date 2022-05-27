@@ -21,9 +21,9 @@ protocol APIClient {
 
 class API: APIClient {
     
-    var session: DHURLSession
+    var session: DWURLSession
     
-    init(session: DHURLSession) {
+    init(session: DWURLSession) {
         self.session = session
     }
     

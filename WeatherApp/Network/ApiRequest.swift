@@ -7,12 +7,12 @@
 
 import Foundation
 
-public protocol DHURLSession {
+public protocol DWURLSession {
     func dataTaskWithRequest(request: URLRequest,
                              completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
 }
 
-extension URLSession: DHURLSession {
+extension URLSession: DWURLSession {
     public func dataTaskWithRequest(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             completionHandler(data, response, error)

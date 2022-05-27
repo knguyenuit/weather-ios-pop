@@ -56,7 +56,7 @@ class HomeViewModel: HomeViewModelType {
             self.onGetListSearchSuccess?(response.searchApi.result)
         } onError: { [weak self] error in
             guard let self = self else { return }
-            self.onGetListSearchFail?(error.message)
+            self.onGetListSearchFail?("searchWeatherError")
         }
     }
 }

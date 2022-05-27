@@ -37,7 +37,7 @@ class LocalWeatherViewModel: LocalWeatherViewModelType {
             self.onGetLocalWeatherSuccess?(response)
         } onError: { [weak self] error in
             guard let self = self else { return }
-            self.onGetLocalWeatherFail?(error.message)
+            self.onGetLocalWeatherFail?("getLocalWeatherError")
         }
 
     }
