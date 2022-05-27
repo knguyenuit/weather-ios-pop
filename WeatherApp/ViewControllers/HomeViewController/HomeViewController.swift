@@ -14,7 +14,7 @@ class HomeViewController: BaseVC, Navigatable {
     @IBOutlet private weak var emptyView: UIView!
     
     // MARK: - Properties
-    private var viewModel: HomeViewModel = HomeViewModel(api: API(), dataLocalManager: DataManager())
+    private var viewModel: HomeViewModel = HomeViewModel(api: API(session: URLSession.shared), dataLocalManager: DataManager())
     private var weatherLocations: [SearchWeatherCityModel] = []
     
     override func viewDidLoad() {

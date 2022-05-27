@@ -30,7 +30,7 @@ class LocalWeatherViewController: BaseVC {
     
     // MARK: - Methods
     init(city: String) {
-        viewModel = LocalWeatherViewModel(api: API(), city: city)
+        viewModel = LocalWeatherViewModel(api: API(session: URLSession.shared), city: city)
         super.init(nibName: nil, bundle: nil)
     }
     
